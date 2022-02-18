@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 
 export const FilterForm = (props) => {
-  const [keyword, setKeyword] = useState("");
 
   const onPriceInputChange = (e) => {
       console.log(keyword)

@@ -35,7 +35,7 @@ export const Search = (props) => {
       <FilterForm
         priceFrom={''}
         priceTo={''}
-        onPriceInputChange={''} />
+        onPriceInputChange={} />
 
       <ToggleColumns
         onCheckboxClick={''}
