@@ -1,9 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 export const FilterForm = (props) => {
+  const [keyword, setKeyword] = useState("");
 
   const onPriceInputChange = (e) => {
-    // TODO: implement handler
+      console.log(keyword)
   }
 
   // TODO: bind handlers and props
@@ -20,7 +21,8 @@ export const FilterForm = (props) => {
         type="number"
         id="priceTo"
         name="priceTo"
-        placeholder="Price to..." />
+        placeholder="Price to..." 
+        onChange={(e) => setKeyword(e.target.value)}/>
     </div>
   )
 }

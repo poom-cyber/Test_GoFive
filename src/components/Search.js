@@ -4,6 +4,7 @@ import '../styles/Search.css';
 import { ToggleColumns } from './ToggleColumns';
 import { ProductList } from './ProductList';
 import { FilterForm } from './FilterForm';
+import Product from '../assets/products';
 
 export const Search = (props) => {
   const [price, setPrice] = useState({ priceFrom: '', priceTo: '' });
@@ -17,7 +18,7 @@ export const Search = (props) => {
   });
 
   const onPriceInputChange = (name, value) => {
-    // TODO: implement price change handler
+    console.log(name, value)
   }
 
   const onCheckboxClick = (name, checked) => {
